@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-family: 'Overpass', sans-serif;
+}
+
+.main {
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    width: 40%;
+    padding: 70px;
+    margin: 10rem 20rem;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.ratingsection,
+.thanksection {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+.thanksection {
+    display: none;
+    text-align: center;
+}
+
+.thanksection .icon {
+    margin: 0 0 20px;
+}
+
+.ratingsection .star span {
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratingsection .star span svg {
+    margin: 7px;
+}
+
+.ratingsection .text,
+.thanksection .text {
+    margin: 30px 0px;
+}
+
+.ratingsection .text h1,
+.thanksection .text h1 {
+    margin: 0px 0px 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+.ratingsection .text p,
+.thanksection .text p {
+    color: hsl(216, 12%, 54%);
+}
+
+.ratingsection .rating {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+.ratingsection .rating .circle {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(157deg, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    cursor: pointer;
+}
+
+.ratingsection .rating .circle:hover {
+    background: hsl(216, 12%, 54%);
+}
+
+.ratingsection .rating .circle {
+    color: hsl(217, 12%, 63%);
+}
+
+.ratingsection .rating .circle:hover {
+    color: white;
+}
+
+.ratingsection .button {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    margin: 20px 0px;
+}
+
+.ratingsection .button button {
+    width: 70%;
+    background: hsl(25, 97%, 53%);
+    color: white;
+    border-radius: 20px;
+    height: 7vh;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.ratingsection .button button:hover {
+    color: hsl(25, 97%, 53%);
+    background: white;
+}
+
+.thanksection .result {
+    color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    background: linear-gradient(hsl(216, 12%, 54%), hsl(217, 12%, 63%));
+    width: 200px;
+    text-align: center;
+    margin: 8% 25% 10%;
+}
+
+.thanksection .result .output {
+    color: black;
+    font-weight: 600;
+}
+
+@media (max-width:500px) {
+    .main {
+        margin: 0;
+    }
+}
